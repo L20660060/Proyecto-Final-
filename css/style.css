@@ -1,0 +1,92 @@
+/* Reseteo de márgenes, rellenos y configuración de box-sizing para todos los elementos */
+* {
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina rellenos por defecto */
+    box-sizing: border-box; /* Incluye márgenes y bordes en el ancho y alto total */
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    background-image: url(../img/fondoLogin.jpg); /* Imagen de fondo para el cuerpo */
+    background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilo para los encabezados h3 */
+h3 {
+    font-family: 'Arial'; /* Fuente utilizada */
+    font-size: 20pt; /* Tamaño del texto */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    width: 100%; /* El encabezado ocupa todo el ancho */
+    background: #3f5c6e; /* Color de fondo */
+    padding: 15px; /* Espaciado interno */
+    color: #FFF; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    border-radius: 13px; /* Bordes redondeados */
+    margin-block: 10px; /* Espaciado arriba y abajo */
+}
+
+/* Contenedor principal que centraliza el contenido */
+#container {
+    background: rgb(93 109 126 / 11%); /* Fondo semitransparente */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100vh; /* Altura igual a la ventana del navegador */
+    display: flex; /* Usa flexbox para alineación */
+    justify-content: center; /* Centra contenido horizontalmente */
+    align-items: center; /* Centra contenido verticalmente */
+}
+
+/* Estilos para el formulario dentro del contenedor */
+#container form {
+    background: rgb(255 255 255 / 29%); /* Fondo semitransparente */
+    width: 30%; /* Ancho del formulario */
+    height: 80%; /* Altura del formulario */
+    padding: 5px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Estilo para imágenes dentro del formulario */
+#container form img {
+    margin: 1px auto; /* Centra la imagen */
+    text-align: center; /* Alineación del texto (opcional en este caso) */
+    display: block; /* Convierte la imagen en un bloque */
+    height: 225px; /* Altura fija */
+    width: 225px; /* Ancho fijo */
+}
+
+/* Estilo para los campos de entrada en el formulario */
+#container form input {
+    width: 90%; /* El campo ocupa el 90% del ancho del formulario */
+    padding: 5px; /* Espaciado interno */
+    font-size: 16pt; /* Tamaño del texto */
+    display: block; /* Elimina alineación en línea */
+    margin: 20px auto; /* Espaciado vertical y centra horizontalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+/* Estilo específico para el botón de envío */
+#container form input[type="submit"] {
+    background: #3f5c6e; /* Color de fondo */
+    padding: 5px; /* Espaciado interno */
+    color: #fff; /* Color del texto */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+/* Estilo para las alertas */
+.alert {
+    font-family: 'Arial'; /* Fuente utilizada */
+    font-size: 20px; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+    color: #FFF; /* Color del texto */
+}
+
+/* Estilos responsivos para pantallas pequeñas (menos de 460px de ancho) */
+@media screen and (max-width: 460px) {
+    #container form {
+        width: 90%; /* El formulario ocupa el 90% del ancho disponible */
+    }
+}
